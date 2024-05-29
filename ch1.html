@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>quart - About</title>
+<title>quart - Chapter 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -127,11 +93,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ch1.html"> 
+    <a class="nav-link active" href="./ch1.html" aria-current="page"> 
 <span class="menu-text">Chapter 1</span></a>
   </li>  
 </ul>
@@ -146,14 +112,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-ilo-intro" id="toc-sec-ilo-intro" class="nav-link active" data-scroll-target="#sec-ilo-intro">Intended Learning Outcomes</a></li>
+  <li><a href="#sec-intro-rstudio_ide" id="toc-sec-intro-rstudio_ide" class="nav-link" data-scroll-target="#sec-intro-rstudio_ide">Introduction to R and RStudio</a>
+  <ul class="collapse">
+  <li><a href="#guided-tour-of-rstudio" id="toc-guided-tour-of-rstudio" class="nav-link" data-scroll-target="#guided-tour-of-rstudio">Guided Tour of RStudio</a></li>
+  <li><a href="#rstudio-menus" id="toc-rstudio-menus" class="nav-link" data-scroll-target="#rstudio-menus">Rstudio menus</a></li>
+  </ul></li>
+  <li><a href="#sec-intro-scripts" id="toc-sec-intro-scripts" class="nav-link" data-scroll-target="#sec-intro-scripts">Writing R Code</a>
+  <ul class="collapse">
+  <li><a href="#r-console" id="toc-r-console" class="nav-link" data-scroll-target="#r-console">R Console</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Chapter 1</h1>
 </div>
 
 
@@ -170,17 +151,129 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>About this site</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<p>This tutorial focuses on getting you started in R and RStudio. R is a programming language that you will write code in and RStudio is a program that makes working in R easier. There are two strategies for working with R and RStudio. The user can either install R and RStudio on their computer and work with them <em>locally</em> OR the user can work with them <em>remotely</em> via an internet browser. In this course, we will work with R and RStudio remotely via <a href="https://posit.cloud/" target="_blank">PositCloud</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>Interested students can refer to Appendix A for technical details on installing R and RStudio locally on their computer. If you already have R and/or RStudio installed, we recommend updating to the latest version of R and RStudio. Appendix B has more details on how to do that.</p>
+</div>
+</div>
+<section id="sec-ilo-intro" class="level2">
+<h2 class="anchored" data-anchor-id="sec-ilo-intro">Intended Learning Outcomes</h2>
+<ul>
+<li><p>Understand the difference between R and RStudio</p></li>
+<li><p>Become familiar with the main components in RStudio</p></li>
+<li><p>Be able to write and run code in the console and in a R Script</p></li>
+<li><p>Be able to install add-on packages</p></li>
+<li><p>Be able to get help for packages and functions</p></li>
+<li><p>Be able to customize RStudio</p></li>
+</ul>
+</section>
+<section id="sec-intro-rstudio_ide" class="level2">
+<h2 class="anchored" data-anchor-id="sec-intro-rstudio_ide">Introduction to R and RStudio</h2>
+<p>As previously mentioned, R is a programming language that we will use to write code for working with data. RStudio is an Integrated Development Environment (IDE) for R. RStudio is dependent on R but separate from it. It provides a useful interface for working with R and has several advantages over the default R interface. Think of it as knowing English and using a plain text editor like NotePad to write a book versus using a word processor like Microsoft Word. You could do it, but it would be much harder without things like spell-checking and formatting and you wouldn’t be able to use some of the advanced features that Word has developed. In a similar way, you can use R without RStudio but we wouldn’t recommend it. RStudio serves as a text editor, file manager, spreadsheet viewer, and much more. The key thing to remember is that although you will do all of your work using RStudio for this course, you are actually working with two pieces of software, which means that from time to time, both of them may have separate updates.</p>
+<p>RStudio runs on Mac, PC, and Linux machines and provides a simplified interface that looks and feels identical on all of them. While it can be installed on your own computer, for this course you will be asked to login to a shared RStudio Cloud server (<a href="https://posit.cloud/" target="_blank">PositCloud</a>) from a web browser. There are several advantages to using the web browser application of RStudio Cloud. It allows you to write and access R code wherever you go. It even works on your tablet because it does not require installation. It also makes it much easier to collaborate with others, and since no installation is required, you can work on projects on any device as long as you are connected to the internet. Another significant advantage of using RStudio in the cloud is that you can run time-consuming scripts without bogging down your own device. However, because RStudio Cloud requires an internet connection, it will run slower if your internet connection is not fast or stable.</p>
+<section id="guided-tour-of-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="guided-tour-of-rstudio">Guided Tour of RStudio</h3>
+<p>The interface for working with RStudio both in the cloud or locally is largely the same and consists of 4 window “panes”. Several of the panes are further subdivided into multiple tabs.</p>
+<p>Let’s look in more detail at each of these four windows. By default, the upper left pane is the <strong>source pane</strong>, where you view, write, and edit code from files and view data tables in a spreadsheet format. When you first open RStudio, this pane won’t display until we open a document or load in some data – don’t worry, we’ll get to that soon.</p>
+<p>The lower left pane is the <strong>console pane</strong>, where you can view the output of your coding and computations. It is also possible to write code directly into the console. However, keep in mind that the code you write in the console will run and can create objects that will be saved in the environment, but the code itself won’t be saved. You need to write your code into a script in the source pane to save it, which we’ll cover in more detail in <a href="#sec-intro-scripts" class="quarto-xref">Section&nbsp;3</a> below.</p>
+<p>The right panes have several different tabs that show you information about your code. The most used tabs in the upper right pane is the <strong>Environment</strong> tab. The Environment tab lists some information about the <em>objects</em> that you have defined in your code.</p>
+<p>In the lower right pane are tabs for browsing files, viewing plots, managing R packages, reading help files, and for viewing html documents and presentations. The most used tabs are the <strong>Files</strong> tab for directory structure, the <strong>Plots</strong> tab for plots made in a script, the <strong>Packages</strong> tab for managing add-on packages (see <strong>?@sec-packages</strong>), and the <strong>Help</strong> tab which displays help pages for R functions and packages. We’ll learn more about the Help tab in <strong>?@sec-function-help</strong>.</p>
+</section>
+<section id="rstudio-menus" class="level3">
+<h3 class="anchored" data-anchor-id="rstudio-menus">Rstudio menus</h3>
+<p>At the top of the RStudio Desktop there are the following set of menus.</p>
+<dl>
+<dt>File</dt>
+<dd>
+<p>The File menu is primarily for the opening, closing and saving of files. Often, these files will be R scripts that open in the script editor. But they could also be R data file, RMarkdown documents, Shiny apps, etc. Here, we can also open and close RStudio <em>projects</em>, which is a very useful organizing feature to which we will return below.</p>
+</dd>
+<dt>Edit</dt>
+<dd>
+<p>The Edit menu primarily provides tools for standard file editing operations such as copy, cut, paste, and search and replace, undo and redo, etc. It also provides code folding features, which is very useful for reducing clutter when editing relatively large R scripts.</p>
+</dd>
+<dt>Code</dt>
+<dd>
+<p>The Code menu provides many useful tools for making editing and running code considerably easier and more efficient. We will explore these features in more depth in subsequent sections, but they include the adding and removing code comments, reformatting code, jumping to functions within and between scripts, creating code regions that can then be run independently, and so on.</p>
+</dd>
+<dt>View</dt>
+<dd>
+<p>The View menu primarily provides options to move around RStudio quickly. These options are all bound to key combinations, as are many other RStudio features, and learning these key combinations is certainly worthwhile because of the eventual speed and efficiency gains that they provide.</p>
+</dd>
+<dt>Plots</dt>
+<dd>
+<p>The Plots menu primarily provides features that are also available in the Plots window itself.</p>
+</dd>
+<dt>Session</dt>
+<dd>
+<p>The Session menu allows us to start new separate RStudio sessions. These then run independently of one another. Also in the Session menu, we can restart the R session in the background, which is a useful session. Remember that RStudio itself is just a front to an R session that runs in the background. Sometimes it is a good idea to restart the R session so as to start in a clean and fresh state. This can be done through the Session menu <em>Restart R</em> option, which is also bound to the keys Ctrl+Shift+F10. Also in Session are options to set R’s <em>working directory</em>. This concept of a working directory is a simple but important one, and we will cover it below.</p>
+</dd>
+<dt>Build</dt>
+<dd>
+<p>The Build menu provides features for running scripts for <em>software builds</em>. This is particularly used for creating R packages.</p>
+</dd>
+<dt>Debug</dt>
+<dd>
+<p>The Debug menu provides tools for debugging our R code. Debugging usually only becomes a necessity when R programming per se, and not something that is usually required when writing individual commands or scripts of commands.</p>
+</dd>
+<dt>Profile</dt>
+<dd>
+<p>The Profile menu provides tools for profiling the running and efficiency of our R code. Code efficiency is certainly not something that those new to R need to worry about, but when writing relatively complex code, profiling can identify bottlenecks.</p>
+</dd>
+<dt>Tools</dt>
+<dd>
+<p>The Tools menu provides miscellaneous tools such as for working with version control using Git, accessing the computer’s operating system’s command line interface, installing and updating packages (as could also be done in the Package window), viewing and modifying keyboard shortcuts. Here, we can also access the <em>Global Options</em> and <em>Project Options</em>. Global Options is where all the general R and RStudio settings are set. One immediately useful setting here is the <em>Appearance</em> setting, which can allow us to change the font, font size, and colour theme of RStudio to suit our preference. Project Options are for the RStudio project specific settings. We will return to these below.</p>
+</dd>
+<dt>Help</dt>
+<dd>
+<p>The Help menu provides much the same information as can be found in the Help window. It also provides some additional links to online resources, such as RStudio’s cheatsheets<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, which are excellent concise guides to many different R and RStudio topics. Also available in the Help menu are tools to access RStudio internal diagnostics. This is only that is needed if and when RStudio seems to be malfunctioning.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="sec-intro-scripts" class="level2">
+<h2 class="anchored" data-anchor-id="sec-intro-scripts">Writing R Code</h2>
+<p>R is a command based system. We type commands, R translates them into machine instructions, which our computer then executes, and then we often, but not necessarily, get back some output. The commands can be typed into the R console, or else they can be put into a script and run as a batch.</p>
+<section id="r-console" class="level3">
+<h3 class="anchored" data-anchor-id="r-console">R Console</h3>
+<p>When learning R, it is usually best to start with typing commands in the R console. When we open RStudio initially, our console will usually look something like this:</p>
+<pre><code>R version 4.3.1 (2023-06-16 ucrt) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+&gt; </code></pre>
 
 
+</section>
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>https://www.rstudio.com/resources/cheatsheets/<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
