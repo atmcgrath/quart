@@ -25,3 +25,11 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 `quarto publish gh-pages`
 
 This will update the `gh-pages` branch with the new build.
+
+## Documentation links
+
+-   Theme list: https://quarto.org/docs/output-formats/html-themes.html
+
+-   Website customization: https://quarto.org/docs/reference/projects/websites.html#section
+
+-   
