@@ -146,7 +146,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#to-update-your-quarto-site" id="toc-to-update-your-quarto-site" class="nav-link active" data-scroll-target="#to-update-your-quarto-site">To update your Quarto site</a>
+  <ul class="collapse">
+  <li><a href="#commit-your-changes-to-your-remote-github-repository" id="toc-commit-your-changes-to-your-remote-github-repository" class="nav-link" data-scroll-target="#commit-your-changes-to-your-remote-github-repository">Commit your changes to your remote github repository</a></li>
+  <li><a href="#publish-your-new-version-to-github-pages" id="toc-publish-your-new-version-to-github-pages" class="nav-link" data-scroll-target="#publish-your-new-version-to-github-pages">Publish your new version to github pages</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -178,8 +188,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[1] 2</code></pre>
 </div>
 </div>
+<section id="to-update-your-quarto-site" class="level2">
+<h2 class="anchored" data-anchor-id="to-update-your-quarto-site">To update your Quarto site</h2>
+<section id="commit-your-changes-to-your-remote-github-repository" class="level3">
+<h3 class="anchored" data-anchor-id="commit-your-changes-to-your-remote-github-repository">Commit your changes to your remote github repository</h3>
+<p><code>git add --all</code></p>
+<p><code>git commit -m "description of commits"</code></p>
+<p><code>git push origin main</code></p>
+</section>
+<section id="publish-your-new-version-to-github-pages" class="level3">
+<h3 class="anchored" data-anchor-id="publish-your-new-version-to-github-pages">Publish your new version to github pages</h3>
+<p><code>quarto publish gh-pages</code></p>
+<p>This will update the <code>gh-pages</code> branch with the new build.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

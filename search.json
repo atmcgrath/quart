@@ -46,6 +46,13 @@
     "href": "index.html",
     "title": "quart",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#to-update-your-quarto-site",
+    "href": "index.html#to-update-your-quarto-site",
+    "title": "quart",
+    "section": "To update your Quarto site",
+    "text": "To update your Quarto site\n\nCommit your changes to your remote github repository\ngit add --all\ngit commit -m \"description of commits\"\ngit push origin main\n\n\nPublish your new version to github pages\nquarto publish gh-pages\nThis will update the gh-pages branch with the new build."
   }
 ]
